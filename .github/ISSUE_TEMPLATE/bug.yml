@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a problem in the CS:GO pack
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing bugs before opening a new issue. If one matches, add your reproduction steps, affected version and evidence as a comment on that issue. Do not post passwords, player data or private addresses.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the visible problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Include where and when it happens.
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen instead?
+  - type: textarea
+    id: versions
+    attributes:
+      label: Relevant versions
+      description: Include the pack version, game build and relevant mods when known.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did it happen?
+      options:
+        - Single player
+        - Multiplayer client
+        - Dedicated server
+        - Other
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or safe log excerpts
+      description: Remove personal information and secrets before attaching anything.
